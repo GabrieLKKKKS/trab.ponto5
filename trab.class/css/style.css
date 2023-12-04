@@ -1,0 +1,103 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f7f7f7;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  
+  .container {
+    background-color: #ffffff;
+    padding: 40px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 400px;
+  }
+  
+  h2 {
+    text-align: center;
+    margin-bottom: 30px;
+    color: #333333;
+  }
+  
+  form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  label,
+  input {
+    margin-bottom: 20px;
+    width: 100%;
+  }
+  
+  input {
+    padding: 12px;
+    border: 1px solid #cccccc;
+    border-radius: 6px;
+    font-size: 16px;
+  }
+  
+  .message {
+    font-size: 14px;
+    margin-top: 5px;
+    display: block;
+  }
+  
+  .valid {
+    color: #4caf50;
+  }
+  
+  .invalid {
+    color: #f44336;
+  }
+  
+  button {
+    margin-top: 30px;
+    padding: 12px 24px;
+    font-size: 16px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  button#gerarButton {
+    background-color: #2196f3;
+    color: #ffffff;
+  }
+  
+  button#gerarButton:hover {
+    background-color: #0f7ae5;
+  }
+  
+  button#apagarButton {
+    background-color: #f44336;
+    color: #ffffff;
+  }
+  
+  button#apagarButton:hover {
+    background-color: #d32f2f;
+  }
+  
+  #infoOutput1,
+  #infoOutput2 {
+    margin-top: 40px;
+    border-top: 1px solid #cccccc;
+    padding-top: 20px;
+    padding-bottom: 20px; /* Adicionando espaço entre os resultados */
+  }
+  
+  #infoOutput1::before,
+  #infoOutput2::before {
+    content: 'Resultado:';
+    font-weight: bold;
+    display: block;
+    margin-bottom: 10px;
+    color: #333333;
+  }
+  

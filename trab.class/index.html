@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Formulário</title>
+  <link rel="stylesheet" href="css/style.css">
+  <style>
+    .message {
+      font-size: 14px;
+      margin-top: 5px;
+    }
+    .valid {
+      color: green;
+    }
+    .invalid {
+      color: red;
+    }
+  </style>
+</head>
+<body>
+  <h2>Informe as informações:</h2>
+  <form id="infoForm">
+    <label for="info1">Informação 1:  </label>
+    <input type="text" id="info1" placeholder="xxx.xxx_y" maxlength="9" oninput="validateInfo1(event)">
+    <span id="info1Message" class="message"></span>
+    <label for="info2">Informação 2:   </label>
+    <input type="text" id="info2" placeholder="n.xxxxxx" pattern="[A-Za-z].[0-9]{1,10}" title="Deve começar com uma letra seguida por até 10 números" maxlength="12" oninput="validateInfo2(event)" required>
+    <span id="info2Message" class="message"></span>
+    <br>
+    <button type="button" id="gerarButton">Gerar</button>
+    <button type="button" id="apagarButton">Apagar</button>
+  </form>
+
+  <div id="infoOutput1"></div>
+  <div id="infoOutput2"></div>
+
+  <script src="script/script.js"></script>
+</body>
+</html>
+
